@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #f4f4f4;
+    color: #181818;
+}
+
+/* utilities */
+.container {
+    width: 100%;
+    max-width: 950px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+/* backgrounds */
+.bg-dark {
+    background: #0d1321;
+}
+
+.bg-light {
+    background: #f4f4f4;
+}
+
+.bg-blue {
+    background: #0d1321;
+    color: #fff;
+}
+
+.bg-white {
+    background: transparent;
+    color: #606060;
+}
+
+/* profile images */
+.card-single-picture img,
+.card-header img {
+    width: 45px;
+    border-radius: 50%;
+}
+
+.card-follow-info img {
+    width: 70px;
+    height: auto;
+    border-radius: 50%;
+}
+
+/* btns */
+.btn {
+    background: #0d1321;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    border: none;
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+}
+
+.btn-follow-dark,
+.btn-follow {
+    display: inline-block;
+    cursor: pointer;
+    padding: 0.4rem 1.9rem;
+    font-size: 0.85rem;
+    border-radius: 15px;
+}
+
+.btn-follow-dark:hover,
+.btn-download:hover {
+    background: #3e5c76;
+    color: #fff;
+    font-weight: 500;
+}
+
+.btn-follow {
+    border: 1px solid #ccc;
+}
+
+.btn-follow:hover,
+.btn-share:hover {
+    background: #ccc;
+    color: #0d1321;
+}
+
+.btn-download {
+    display: inline-block;
+    cursor: pointer;
+    padding: 0.4rem 3rem;
+    font-size: 0.85rem;
+    border-radius: 15px;
+}
+
+.btn-share {
+    display: inline-block;
+    cursor: pointer;
+    padding: 0.4rem 3rem;
+    font-size: 0.85rem;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    margin-left: 1rem;
+}
+
+/* card Upper */
+.card-upper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem auto;
+}
+
+/* card follow */
+.card-follow {
+    width: 380px;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    text-align: center;
+}
+
+.card-follow-info img {
+    position: absolute;
+    bottom: 160px;
+    left: 110px;
+    object-fit: cover;
+}
+
+.card-follow-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-block-start: 3.5rem;
+    padding-block-end: 3rem;
+}
+
+.card-follow-info p {
+    font-size: 0.9rem;
+    color: #606060;
+    padding-top: 0.2rem;
+    margin-bottom: 1rem;
+}
+
+/* card download */
+.card-download,
+.card-lower {
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    margin-left: 2rem;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1.5rem;
+}
+
+.card-download-user-info {
+    display: flex;
+    align-items: center;
+}
+
+.card-download-user-info>div {
+    margin-left: 0.9rem;
+}
+
+.card-download-user-info p {
+    color: #606060;
+    font-size: 0.8rem;
+    padding-top: 0.3rem;
+}
+
+.card-download-info {
+    text-align: center;
+    margin: 1rem 0 2.5rem;
+}
+
+.card-download-info i {
+    color: #606060;
+
+}
+
+.card-download-info p {
+    color: #606060;
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+}
+
+.card-download-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-share i {
+    margin-left: 0.5rem;
+}
+
+/* last card */
+.card-lower {
+    width: 400px;
+}
+
+@media(max-width: 780px) {
+    .card-upper {
+        display: block;
+    }
+
+    .card-follow-info img {
+        left: 150px;
+    }
+
+    .container {
+        max-width: 400px;
+        margin: 0.5rem 2rem;
+    }
+
+    .card-download .card-header {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        padding-top: 2rem;
+    }
+
+    .card-download-btns {
+        display: block;
+    }
+
+    .btn-download {
+        margin-bottom: 1rem;
+    }
+
+    .btn-share {
+        margin-bottom: 2rem;
+    }
+}
